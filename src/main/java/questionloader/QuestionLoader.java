@@ -15,16 +15,16 @@ public class QuestionLoader {
     private String standardPath = "E:\\JavaTutorial\\TestMashine\\src\\main\\java\\questionloader\\files\\standard.txt";
 
 
-    File file = new File(path);
-    String stringOfTestFile = readFileToString(file);
+    private File file = new File(path);
+    private String stringOfTestFile = readFileToString(file);
 
-    List<String> listOfMainQuestions = createListOfMainQuestions();
-    List<String> listOfSubQuastions = createListOfSubQuestons();
+    private List<String> listOfMainQuestions = createListOfMainQuestions();
+    private List<String> listOfSubQuastions = createListOfSubQuestons();
 
     private File file1 = new File(standardPath);
     private String stringOfStandards = readFileToString(file1);
 
-    int[] standards = createListOfCorrectAnswers();
+    private int[] standards = createListOfCorrectAnswers();
 
     private String readFileToString(File file) throws FileNotFoundException {
        Scanner scanner = new Scanner(file);

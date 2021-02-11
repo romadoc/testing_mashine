@@ -11,7 +11,7 @@ public class Test {
         //questionLoader.createListOfSubQuestons();
         TestPattern testPattern = new TestPattern();
         testPattern.showTestQuestion(1);
-        questionLoader.createListOfCorrectAnswers();
+
 
 
 
