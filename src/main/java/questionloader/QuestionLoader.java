@@ -40,11 +40,24 @@ public class QuestionLoader {
        while (matcher.find()) {
            list.add(matcher.group());
        }
+       // System.out.println("main Q >> " + list);
        return list;
     }
 
     public List<String> createListOfSubQuestons() {
+        List<String> list1 = new ArrayList<String>();
         List<String> list = Arrays.asList(stringOfTestFile.split("\\d*[.]\\s[А-Яа-я ,]*:"));
+        for (int i = 0; i < list.size(); i++) {
+            if (!list.get(i).equals("")) {
+                list1.add(list.get(i));
+            }
+        }
+
+        return list1;
+    }
+
+    public List<Integer> createListOfCorrectAnswers() {
+        List<Integer> list = new ArrayList<Integer>();
         return list;
     }
 
