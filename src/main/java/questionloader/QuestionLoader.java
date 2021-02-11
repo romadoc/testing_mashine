@@ -18,12 +18,13 @@ public class QuestionLoader {
     File file = new File(path);
     String stringOfTestFile = readFileToString(file);
 
-    File file1 = new File(standardPath);
-    String stringOfStandards = readFileToString(file1);
-
     List<String> listOfMainQuestions = createListOfMainQuestions();
     List<String> listOfSubQuastions = createListOfSubQuestons();
 
+    private File file1 = new File(standardPath);
+    private String stringOfStandards = readFileToString(file1);
+
+    int[] standards = createListOfCorrectAnswers();
 
     private String readFileToString(File file) throws FileNotFoundException {
        Scanner scanner = new Scanner(file);
@@ -35,7 +36,7 @@ public class QuestionLoader {
 
     }
 
-    public List<String> createListOfMainQuestions() {
+    private List<String> createListOfMainQuestions() {
        Pattern pattern = Pattern.compile("\\d*[.]\\s[А-Яа-яA-Za-z ,]*:");
        Matcher matcher = pattern.matcher(stringOfTestFile);
        List<String> list = new ArrayList<String>();
@@ -45,7 +46,7 @@ public class QuestionLoader {
        return list;
     }
 
-    public List<String> createListOfSubQuestons() {
+    private List<String> createListOfSubQuestons() {
         List<String> list1 = new ArrayList<String>();
         List<String> list = Arrays.asList(stringOfTestFile.split("\\d*[.]\\s[А-Яа-я ,]*:"));
         for (int i = 0; i < list.size(); i++) {
@@ -56,12 +57,14 @@ public class QuestionLoader {
         return list1;
     }
 
-    public List<Integer> createListOfCorrectAnswers() {
-        List<Integer> list = new ArrayList<Integer>();
-        //remove spaces. than parsint
 
-        System.out.println(list);
-        return null;
+    private int[] createListOfCorrectAnswers() {
+        String[] standards = stringOfStandards.split("\\D+");
+        int[] numOfStandarts = new int[10];
+        for (int i = 0; i < numOfStandarts.length; i++) {
+            numOfStandarts[i] = Integer.parseInt(standards[i]);
+        }
+        return numOfStandarts;
     }
 
 
@@ -73,5 +76,15 @@ public class QuestionLoader {
         this.path = path;
     }
 
+    public int[] getStandards() {
+        return standards;
+    }
 
+    public List<String> getListOfMainQuestions() {
+        return listOfMainQuestions;
+    }
+
+    public List<String> getListOfSubQuastions() {
+        return listOfSubQuastions;
+    }
 }
