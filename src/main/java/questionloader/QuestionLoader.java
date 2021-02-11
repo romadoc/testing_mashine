@@ -2,10 +2,7 @@ package questionloader;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -15,10 +12,15 @@ public class QuestionLoader {
     }
 
     private String path = "E:\\JavaTutorial\\TestMashine\\src\\main\\java\\questionloader\\files\\АТЕРОСКЛЕРОЗ.txt";
+    private String standardPath = "E:\\JavaTutorial\\TestMashine\\src\\main\\java\\questionloader\\files\\standard.txt";
 
 
     File file = new File(path);
     String stringOfTestFile = readFileToString(file);
+
+    File file1 = new File(standardPath);
+    String stringOfStandards = readFileToString(file1);
+
     List<String> listOfMainQuestions = createListOfMainQuestions();
     List<String> listOfSubQuastions = createListOfSubQuestons();
 
@@ -40,7 +42,6 @@ public class QuestionLoader {
        while (matcher.find()) {
            list.add(matcher.group());
        }
-       // System.out.println("main Q >> " + list);
        return list;
     }
 
@@ -52,13 +53,15 @@ public class QuestionLoader {
                 list1.add(list.get(i));
             }
         }
-
         return list1;
     }
 
     public List<Integer> createListOfCorrectAnswers() {
         List<Integer> list = new ArrayList<Integer>();
-        return list;
+        //remove spaces. than parsint
+
+        System.out.println(list);
+        return null;
     }
 
 
