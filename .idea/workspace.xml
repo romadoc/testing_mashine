@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f095848a-fe69-4138-9116-dc0eebd4fabd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudentTest/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudentTest/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudentTest/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudentTest/StudentTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudentTest/out/production/StudentTest/questionloader/QuestionLoader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudentTest/out/production/StudentTest/questionloader/Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudentTest/out/production/StudentTest/questionloader/files/АТЕРОСКЛЕРОЗ.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudentTest/out/production/StudentTest/questionloader/files/АТЕРОСКЛЕРОЗ.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudentTest/src/questionloader/QuestionLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudentTest/src/questionloader/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudentTest/src/questionloader/files/АТЕРОСКЛЕРОЗ.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudentTest/src/questionloader/files/АТЕРОСКЛЕРОЗ.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestMashine.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TestCreator/TestPattern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/questionloader/QuestionLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/questionloader/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/questionloader/files/АТЕРОСКЛЕРОЗ.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/questionloader/files/АТЕРОСКЛЕРОЗ.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/TestMashine-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/TestCreator/TestPattern.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/questionloader/QuestionLoader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/questionloader/Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="TestMashine" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1oFWIM8d9GLYB97FfkSE28ywvuF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/questionloader/files" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\JavaTutorial\TestMashine\src\main\java\questionloader\files" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="questionloader.Test" />
+      <module name="TestMashine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="questionloader.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f095848a-fe69-4138-9116-dc0eebd4fabd" name="Default Changelist" comment="" />
+      <created>1612882737127</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612882737127</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="179" width="1203" height="682" key="#Project_Structure" timestamp="1612957068078">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" width="1203" height="682" key="#Project_Structure/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1612957068078" />
+    <state x="742" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612896074567">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="742" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1612896074567" />
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1613021416700">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1613021416700" />
+    <state width="1877" height="164" key="GridCell.Tab.0.bottom" timestamp="1613022639523">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="164" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1613022639523" />
+    <state width="1877" height="2" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612990111964" />
+    <state width="1877" height="164" key="GridCell.Tab.0.center" timestamp="1613022639523">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="164" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1613022639523" />
+    <state width="1877" height="2" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612990111964" />
+    <state width="1877" height="164" key="GridCell.Tab.0.left" timestamp="1613022639523">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="164" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1613022639523" />
+    <state width="1877" height="2" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612990111964" />
+    <state width="1877" height="164" key="GridCell.Tab.0.right" timestamp="1613022639523">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="164" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1613022639523" />
+    <state width="1877" height="2" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612990111964" />
+    <state width="1877" height="2" key="GridCell.Tab.1.bottom" timestamp="1612990111964">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="2" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1612981460861" />
+    <state width="1877" height="2" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612990111964" />
+    <state width="1877" height="2" key="GridCell.Tab.1.center" timestamp="1612990111964">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="2" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1612981460861" />
+    <state width="1877" height="2" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612990111964" />
+    <state width="1877" height="2" key="GridCell.Tab.1.left" timestamp="1612990111964">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="2" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1612981460861" />
+    <state width="1877" height="2" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612990111964" />
+    <state width="1877" height="2" key="GridCell.Tab.1.right" timestamp="1612990111964">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="2" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1612981460861" />
+    <state width="1877" height="2" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612990111964" />
+    <state x="440" y="95" key="SettingsEditor" timestamp="1612957180452">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="95" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1612957180452" />
+    <state x="2575" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1613040001514">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1612979599304" />
+    <state x="2575" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613040001514" />
+    <state x="406" y="191" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1612981721678">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="406" y="191" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1612981721678" />
+  </component>
+</project>
