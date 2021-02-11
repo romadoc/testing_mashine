@@ -1,6 +1,8 @@
 package TestCreator;
 
-public class TestPattern {
+import questionloader.QuestionLoader;
 
+public class TestPattern {
+    QuestionLoader questionLoader;
 
 }
