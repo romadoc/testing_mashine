@@ -10,7 +10,7 @@ public class Test {
         //questionLoader.createListOfMainQuestions();
         //questionLoader.createListOfSubQuestons();
         TestPattern testPattern = new TestPattern();
-        testPattern.showTestQuestion(1);
+        testPattern.showTestQuestion(9);
 
 
 
