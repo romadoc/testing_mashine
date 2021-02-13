@@ -3,19 +3,19 @@ package TestCreator;
 import questionloader.QuestionLoader;
 
 import java.io.FileNotFoundException;
+import java.util.List;
 
 /**
- * паттерн для тестирования. подается номер вопроса и выводится вопрос и варианты ответов к нему.
+ * паттерн для тестирования. подается номер вопроса и выводится вопрос и List эталонных ответов к нему.
  */
 public class TestPattern {
-    private int studentAnswer;
 
     public void showTestQuestion(int questionNumber) throws FileNotFoundException {
         QuestionLoader questionLoader = new QuestionLoader();
-        String mainQuestion = questionLoader.createListOfMainQuestions().get(questionNumber);
-        String subquestionsOfMainQuestion = questionLoader.createListOfSubQuestons().get(questionNumber);
+        String mainQuestion = questionLoader.getListOfMainQuestions().get(questionNumber);
+        String answerVariants = questionLoader.getListOfSubQuastions().get(questionNumber);
         System.out.println(mainQuestion);
-        System.out.println(subquestionsOfMainQuestion);
+        System.out.println(answerVariants);
 
     }
 

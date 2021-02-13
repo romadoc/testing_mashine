@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * вход: номер теста | возврат - List правильных ответов к тесту
+ */
 public class CorrectAnswerLoader {
     public CorrectAnswerLoader() throws FileNotFoundException {
     }
@@ -16,8 +19,7 @@ public class CorrectAnswerLoader {
     String string = questionLoader.readFileToString(fileCorrectAnswer);
     String[] strings = string.split(";");
 
-    //вход: номер теста, номер вопроса | возврат - правильный ответ
-    public int createArrayOfStandardDigits(int testID, int questionNum) {
+    public List<Integer> createArrayOfStandardDigits(int testID) {
         List<Integer> standards = new ArrayList<Integer>();
         for (int i = 0; i < strings.length; i++) {
             strings[i] = strings[i].replaceAll("\\s+","");
@@ -27,6 +29,6 @@ public class CorrectAnswerLoader {
         for (int i = 0; i < strValues.length; i++ ) {
             standards.add(Integer.parseInt(strValues[i]));
         }
-        return standards.get(questionNum);
+        return standards;
     }
 }

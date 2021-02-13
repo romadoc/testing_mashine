@@ -7,7 +7,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * загрузка из файла вопросов, подвопросов
+ * загрузка из файла главных вопросов и подвопросов(предлагаемых вариантов ответа)
  */
 public class QuestionLoader {
 
