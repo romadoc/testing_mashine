@@ -13,7 +13,7 @@ public class QuestionLoader {
 
     public QuestionLoader() throws FileNotFoundException {
     }
-
+    //добавить возможность редактирования или сохранения в папке исп. файла
     private String path = "E:\\JavaTutorial\\TestMashine\\src\\main\\java\\questionloader\\files\\АТЕРОСКЛЕРОЗ.txt";
 
     private File file = new File(path);
@@ -22,7 +22,7 @@ public class QuestionLoader {
     private List<String> listOfMainQuestions = createListOfMainQuestions();
     private List<String> listOfSubQuastions = createListOfSubQuestons();
 
-    private String readFileToString(File file) throws FileNotFoundException {
+    protected String readFileToString(File file) throws FileNotFoundException {
        Scanner scanner = new Scanner(file);
        StringBuilder stringBuilder = new StringBuilder();
         while (scanner.hasNextLine()) {
