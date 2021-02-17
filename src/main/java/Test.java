@@ -10,7 +10,7 @@ public class Test {
         //questionLoader.createListOfMainQuestions();
         //questionLoader.createListOfSubQuestons();
         TestPattern testPattern = new TestPattern();
-        testPattern.showTestQuestion(1);
+        testPattern.showTestQuestionAndSubquastions(1);
         CorrectAnswerLoader answerLoader = new CorrectAnswerLoader();
         answerLoader.createArrayOfStandardDigits(1);
 

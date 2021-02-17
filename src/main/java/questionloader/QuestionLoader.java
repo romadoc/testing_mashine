@@ -21,6 +21,7 @@ public class QuestionLoader {
 
     private List<String> listOfMainQuestions = createListOfMainQuestions();
     private List<String> listOfSubQuastions = createListOfSubQuestons();
+    private int size = listOfMainQuestions.size();
 
     protected String readFileToString(File file) throws FileNotFoundException {
        Scanner scanner = new Scanner(file);
@@ -69,5 +70,9 @@ public class QuestionLoader {
 
     public List<String> getListOfSubQuastions() {
         return listOfSubQuastions;
+    }
+
+    public int getSize() {
+        return size;
     }
 }
