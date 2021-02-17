@@ -1,7 +1,6 @@
 package TestCreator;
 
 import questionloader.QuestionLoader;
-
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,11 +11,9 @@ public class TestingMashine {
     public TestingMashine() throws FileNotFoundException {
     }
 
-    private int testId;
-    private int score;
     List<TestPattern> testPatternList = new ArrayList<TestPattern>();
     private int quantOfQuestions = getQuantityOfQuestions();
-    private void testPerson() throws FileNotFoundException {
+    public void testPerson() throws FileNotFoundException {
         for (int i = 0; i < quantOfQuestions; i++) {
             TestPattern testPattern = new TestPattern();
             testPattern.showTestQuestionAndSubquastions(i);
@@ -28,12 +25,11 @@ public class TestingMashine {
     private int inputAnswer() {
         String s = ">>";
         System.out.println(s);
-
         Scanner scanner = new Scanner(System.in);
         while (!scanner.hasNextInt()) {
             System.out.println(s);
+            scanner.next();
         }
-
         return scanner.nextInt();
     }
 
@@ -41,10 +37,5 @@ public class TestingMashine {
         QuestionLoader questionLoader = new QuestionLoader();
         return questionLoader.getSize();
     }
-
-
-
-
-
 
 }

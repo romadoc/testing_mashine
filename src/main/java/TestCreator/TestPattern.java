@@ -10,8 +10,8 @@ import java.io.FileNotFoundException;
  */
 public class TestPattern {
     private QuestionLoader questionLoader = new QuestionLoader();
-    private int testID; //id теста
-    private int studentAnswer; // ответ на вопрос (id теста и номер вопроса) тестируемого
+
+    private int studentAnswer; // ответ на вопрос теста тестируемого
 
 
     public TestPattern() throws FileNotFoundException {
@@ -24,14 +24,6 @@ public class TestPattern {
         System.out.println(mainQuestion);
         System.out.println(answerVariants);
 
-    }
-
-    public void setTestID(int testID) {
-        this.testID = testID;
-    }
-
-    public int getTestID() {
-        return testID;
     }
 
     public int getStudentAnswer() {
