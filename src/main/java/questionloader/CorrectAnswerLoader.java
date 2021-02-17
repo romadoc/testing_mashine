@@ -12,7 +12,7 @@ import java.util.List;
 public class CorrectAnswerLoader {
     public CorrectAnswerLoader() throws FileNotFoundException {
     }
-    //добавить возможность редактирования или сохранения в папке исп. файла
+    //добавить возможность редактирования пути к файлу ответов или сохранения этого файла в папке программы
     private String standardPath = "E:\\JavaTutorial\\TestMashine\\src\\main\\java\\questionloader\\files\\standard.txt";
     private File fileCorrectAnswer = new File(standardPath);
     QuestionLoader questionLoader = new QuestionLoader();
