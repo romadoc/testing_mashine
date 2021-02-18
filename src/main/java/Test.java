@@ -1,4 +1,5 @@
 import TestCreator.TestPattern;
+import TestCreator.TestingMashine;
 import questionloader.CorrectAnswerLoader;
 import questionloader.QuestionLoader;
 
@@ -9,10 +10,8 @@ public class Test {
         QuestionLoader questionLoader = new QuestionLoader();
         //questionLoader.createListOfMainQuestions();
         //questionLoader.createListOfSubQuestons();
-        TestPattern testPattern = new TestPattern();
-        testPattern.showTestQuestionAndSubquastions(1);
-        CorrectAnswerLoader answerLoader = new CorrectAnswerLoader();
-        answerLoader.createArrayOfStandardDigits(1);
+        TestingMashine testingMashine = new TestingMashine();
+        testingMashine.testPerson();
 
 
 

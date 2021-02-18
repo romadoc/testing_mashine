@@ -17,14 +17,14 @@ public class TestingMashine {
         for (int i = 0; i < quantOfQuestions; i++) {
             TestPattern testPattern = new TestPattern();
             testPattern.showTestQuestionAndSubquastions(i);
-            testPattern.setStudentAnswers(inputAnswer());
+            testPattern.setStudentAnswers(inputAnswer("type you variant"));
             testPatternList.add(testPattern);
         }
     }
 
-    private int inputAnswer() {
-        String s = ">>";
-        System.out.println(s);
+    private int inputAnswer(String s) {
+        s = s + " >>";
+        System.out.print(s);
         Scanner scanner = new Scanner(System.in);
         while (!scanner.hasNextInt()) {
             System.out.println(s);
