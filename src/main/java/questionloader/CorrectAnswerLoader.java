@@ -19,13 +19,13 @@ public class CorrectAnswerLoader {
     String string = questionLoader.readFileToString(fileCorrectAnswer);
     String[] strings = string.split(";");
 
-    public List<Integer> createArrayOfStandardDigits(int testID) {
+    public List<Integer> createArrayOfStandardDigits(int testId) {
         List<Integer> standards = new ArrayList<Integer>();
         for (int i = 0; i < strings.length; i++) {
             strings[i] = strings[i].replaceAll("\\s+","");
             strings[i] = strings[i].replaceAll(",", "");
         }
-        String[] strValues = strings[testID].split("(?<=\\d)");
+        String[] strValues = strings[testId].split("(?<=\\d)");
         for (int i = 0; i < strValues.length; i++ ) {
             standards.add(Integer.parseInt(strValues[i]));
         }

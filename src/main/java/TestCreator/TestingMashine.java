@@ -1,6 +1,8 @@
 package TestCreator;
 
+import questionloader.CorrectAnswerLoader;
 import questionloader.QuestionLoader;
+
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,17 +10,19 @@ import java.util.Scanner;
 
 public class TestingMashine {
 
+    protected List<TestPattern> listOfAnswers = new ArrayList<TestPattern>();
+    int score = 0;
+    private int quantOfQuestions = getQuantityOfQuestions();
+
     public TestingMashine() throws FileNotFoundException {
     }
 
-    List<TestPattern> testPatternList = new ArrayList<TestPattern>();
-    private int quantOfQuestions = getQuantityOfQuestions();
     public void testPerson() throws FileNotFoundException {
         for (int i = 0; i < quantOfQuestions; i++) {
             TestPattern testPattern = new TestPattern();
             testPattern.showTestQuestionAndSubquastions(i);
             testPattern.setStudentAnswers(inputAnswer("type you variant"));
-            testPatternList.add(testPattern);
+            listOfAnswers.add(testPattern);
         }
     }
 
@@ -34,8 +38,26 @@ public class TestingMashine {
     }
 
     private int getQuantityOfQuestions() throws FileNotFoundException {
+        //getting quantity of quastions in test
         QuestionLoader questionLoader = new QuestionLoader();
         return questionLoader.getSize();
+    }
+
+    public void compareAnswerAndStandards() throws FileNotFoundException {
+
+        //List<TestPattern> answers = listOfAnswers;
+        for (int i = 0; i < listOfAnswers.size(); i++) {
+            int studentAnswer = listOfAnswers.get(i).getStudentAnswer();
+            CorrectAnswerLoader correctAnswerLoader = new CorrectAnswerLoader();
+            int correct = correctAnswerLoader.createArrayOfStandardDigits(0).get(i);
+            if (studentAnswer == correct) {
+                score++;
+            }
+
+        }
+        System.out.println();
+        System.out.println("you score is: " + score);
+
     }
 
 }
