@@ -53,7 +53,7 @@ public class TestingMashine {
             if (studentAnswer == correct) {
                 score++;
             } else {
-                incorrectanswers.add(i);
+                incorrectanswers.add(i+1);
             }
 
         }
