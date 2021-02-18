@@ -45,18 +45,21 @@ public class TestingMashine {
 
     public void compareAnswerAndStandards() throws FileNotFoundException {
 
-        //List<TestPattern> answers = listOfAnswers;
+        List<Integer> incorrectanswers = new ArrayList<Integer>();
         for (int i = 0; i < listOfAnswers.size(); i++) {
             int studentAnswer = listOfAnswers.get(i).getStudentAnswer();
             CorrectAnswerLoader correctAnswerLoader = new CorrectAnswerLoader();
             int correct = correctAnswerLoader.createArrayOfStandardDigits(0).get(i);
             if (studentAnswer == correct) {
                 score++;
+            } else {
+                incorrectanswers.add(i);
             }
 
         }
         System.out.println();
         System.out.println("you score is: " + score);
+        System.out.println("incorrect answers in question(s): " + incorrectanswers);
 
     }
 
