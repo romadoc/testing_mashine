@@ -20,7 +20,7 @@ public class TestPattern {
     public void showTestQuestionAndSubquastions(int questionNumber) throws FileNotFoundException {
         //на вход номер вопроса из теста. в консоль - вопрос и варианты ответов
         String mainQuestion = questionLoader.getListOfMainQuestions().get(questionNumber);
-        String answerVariants = questionLoader.getListOfSubQuastions().get(questionNumber);
+        String answerVariants = questionLoader.getListOfSubQuestions().get(questionNumber);
         System.out.println(mainQuestion);
         System.out.println(answerVariants);
 

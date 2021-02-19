@@ -20,7 +20,7 @@ public class QuestionLoader {
     private String stringOfTestFile = readFileToString(file);
 
     private List<String> listOfMainQuestions = createListOfMainQuestions();
-    private List<String> listOfSubQuastions = createListOfSubQuestons();
+    private List<String> listOfSubQuestions = createListOfSubQuestons();
     private int size = listOfMainQuestions.size();
 
     protected String readFileToString(File file) throws FileNotFoundException {
@@ -68,8 +68,8 @@ public class QuestionLoader {
         return listOfMainQuestions;
     }
 
-    public List<String> getListOfSubQuastions() {
-        return listOfSubQuastions;
+    public List<String> getListOfSubQuestions() {
+        return listOfSubQuestions;
     }
 
     public int getSize() {

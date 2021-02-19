@@ -2,7 +2,6 @@ package TestCreator;
 
 import questionloader.CorrectAnswerLoader;
 import questionloader.QuestionLoader;
-
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,11 +11,13 @@ public class TestingMashine {
 
     protected List<TestPattern> listOfAnswers = new ArrayList<TestPattern>();
     int score = 0;
-    private int quantOfQuestions = getQuantityOfQuestions();
 
-    public TestingMashine() throws FileNotFoundException {
+    private int testID;
+
+    public TestingMashine(int testID) throws FileNotFoundException {
+        this.testID = testID;
     }
-
+    private int quantOfQuestions = getQuantityOfQuestions();
     public void testPerson() throws FileNotFoundException {
         for (int i = 0; i < quantOfQuestions; i++) {
             TestPattern testPattern = new TestPattern();
@@ -46,10 +47,11 @@ public class TestingMashine {
     public void compareAnswerAndStandards() throws FileNotFoundException {
 
         List<Integer> incorrectanswers = new ArrayList<Integer>();
+
         for (int i = 0; i < listOfAnswers.size(); i++) {
             int studentAnswer = listOfAnswers.get(i).getStudentAnswer();
             CorrectAnswerLoader correctAnswerLoader = new CorrectAnswerLoader();
-            int correct = correctAnswerLoader.createArrayOfStandardDigits(0).get(i);
+            int correct = correctAnswerLoader.createArrayOfStandardDigits(testID).get(i);
             if (studentAnswer == correct) {
                 score++;
             } else {
@@ -61,6 +63,10 @@ public class TestingMashine {
         System.out.println("you score is: " + score);
         System.out.println("incorrect answers in question(s): " + incorrectanswers);
 
+    }
+
+    public void setTestID(int testID) {
+        this.testID = testID;
     }
 
 }

@@ -20,6 +20,7 @@ public class CorrectAnswerLoader {
     String[] strings = string.split(";");
 
     public List<Integer> createArrayOfStandardDigits(int testId) {
+        //создается лист эталонов ответов
         List<Integer> standards = new ArrayList<Integer>();
         for (int i = 0; i < strings.length; i++) {
             strings[i] = strings[i].replaceAll("\\s+","");
@@ -31,4 +32,6 @@ public class CorrectAnswerLoader {
         }
         return standards;
     }
+
+
 }
